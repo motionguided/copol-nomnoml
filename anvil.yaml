@@ -1,5 +1,11 @@
 allow_embedding: false
-package_name: Custom_HTML_2
-name: Custom HTML 2
+package_name: copol_nomnoml
+startup: {type: form, module: Machine1}
+name: copol:nomnoml
+startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-services: []
+metadata: {title: NOMNOML.}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
